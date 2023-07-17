@@ -2,28 +2,42 @@
 <html lang="en">
 
 <head>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        ol,
+        ul li {
+            font-size: 1.5rem;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thitinan's example page</title>
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <title>Prime Numbers</title>
 </head>
 
 <body>
-    <h1>Khon Kaen University</h1>
-    <img src="images/test1.jpg" alt="Khon Kaen University" width="60%" height="60%">
-    <figure>
-        <img src="images/pcoe31.jpg" alt="Khon Kaen University" width="60%" height="60%">
-        <figcaption>COE31 KKU</figcaption>
-    </figure>
-    <p id="heading">Khon Kaen University has many outstanding</p>
+    <h1>Prime Numbers Finder!</h1>
+    <h2>write the web app prompt accepting for a positive integer number</h2>
     <ul>
-        <li class="popular">ศาลเจ้าพ่อมอดินแดง</li>
-        <li>พิพิธภัณฑ์ธรรมชาติวิทยา มข</li>
-        <li class="popular">อุโมงค์ต้นไม้</li>
+        <li>If the entered text is not a positive integer number, then the web app will keep asking for a number until
+            the valid positive integer is entered</li>
+        <li>If the entered text is a positive integer, then the web app will add into a list of prime numbers</li>
     </ul>
-    <p>Have you been in these places? If not, please do so. For more information, please click <a
-            href="https://www.kku.ac.th/" target="_blank">Khon Kaen University</a>
-    </p>
+    <h2>Hint:</h2>
+    <ol>
+        <li>You may want to use loop with label</li>
+        <li>You may want to use array with push function</li>
+    </ol>
+    <script src="script.js"></script>
 </body>
 
 </html>
