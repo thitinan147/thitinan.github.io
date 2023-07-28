@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            font-family: sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .test-grid {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 10fr 10fr 20fr 30fr 15fr 15fr;
+            /* grid-auto-rows: minmax(100px, auto); */
+
+        }
+
+        .test-grid div {
+            /* padding: 1em; */
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .test-grid div.header,
+        .hero,
+        .menu,
+        .main {
+            color: white;
+        }
+
+        .tablet {
+            grid-column: 1 / 5;
+            background-color: white;
+        }
+
+        .header {
+            grid-column: 1 / 5;
+            background-color: #0F1629;
+        }
+
+        .hero {
+            grid-column: 1 / 5;
+            background-color: #4C86C6;
+        }
+
+        .menu {
+            grid-column: 1 / 2;
+            grid-row: 4 / 7;
+            background-color: #EF3C4F;
+        }
+
+        .main {
+            grid-column: 2 / 5;
+            background-color: #24344B;
+        }
+
+        .banner {
+            grid-column: 2 / 5;
+            background-color: #FFD169;
+        }
+
+        .extra {
+            grid-column: 2 / 4;
+            background-color: #4DBD97;
+        }
+
+        .image {
+            grid-column: 4 / 5;
+            background-color: #C1E4E6;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+</head>
+
+<body>
+    <div class="test-grid">
+        <div class="tablet">TABLET</div>
+        <div class="header">HEADER</div>
+        <div class="hero">HERO</div>
+        <div class="menu">MENU</div>
+        <div class="main">MAIN</div>
+        <div class="banner">BANNER</div>
+        <div class="extra">EXTRA</div>
+        <div class="image">IMAGE</div>
+    </div>
+</body>
+
+</html>
