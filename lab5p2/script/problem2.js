@@ -1,9 +1,9 @@
 let input;
 let inputInt;
 let list = [];
-average = 0;  
-min = 0;
-max = 0;
+let average = 0;  
+let min = 0;
+let max = 0;
 
 function readInput() {
   while (true) {
